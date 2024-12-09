@@ -1,0 +1,1 @@
+console.log(`${+true} plus ${+false} is ${true + false} but sometimes 1 plus 0 is ${1 + '0'}`);
