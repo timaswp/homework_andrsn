@@ -11,5 +11,5 @@ function toBinary(num) {
         binaryNum = num % 2 + binaryNum;
         num = Math.floor(num / 2);
     }
-    return +binaryNum || 0;
+    return binaryNum || 0;
 }

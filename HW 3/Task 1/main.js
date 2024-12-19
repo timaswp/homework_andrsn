@@ -1,14 +1,10 @@
 const myIterable = {
-    from: 1,
+    from: 0,
     to: 4,
 
     [Symbol.iterator]() {
         if (typeof this.from !== 'number' || typeof this.to !== 'number') {
             throw new Error("Properties 'from' and 'to' must exist and be numbers");
-        }
-
-        if (!this.from || !this.to) {
-            throw new Error("Properties 'from' and 'to' are not defined");
         }
 
         if (this.to < this.from) {
