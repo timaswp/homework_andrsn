@@ -1,6 +1,6 @@
 class BaseStorage {
     constructor(maxSize = 10) {
-        if (typeof maxSize !== 'number' || maxSize <= 0 || !isFinite(maxSize)) {
+        if (isNaN(maxSize) || maxSize <= 0 || !isFinite(maxSize)) {
             throw new Error("Invalid max size value");
         }
 
